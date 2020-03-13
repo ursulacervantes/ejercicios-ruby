@@ -8,7 +8,7 @@ $ ruby mi- edad.rb
 Tienes 29 años
 ```
 
-[Ver solución](soluciones/nivel-1/mi-edad.rb)
+[Ver solución](soluciones/nivel-1/mi-edad.md)
 
 ## Variaciones
 

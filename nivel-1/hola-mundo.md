@@ -9,4 +9,4 @@ $ ruby hola-mundo.rb
 Hola Mundo
 ```
 
-[Ver solución](soluciones/nivel-1/hola-mundo.rb)
+[Ver solución](soluciones/nivel-1/hola-mundo.md)

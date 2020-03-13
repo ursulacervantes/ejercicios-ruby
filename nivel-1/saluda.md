@@ -11,4 +11,4 @@ Hola Ursula!
 
 Te en cuenta la línea en blanco antes de imprimir el saludo!
 
-[Ver solución](soluciones/nivel-1/saluda.rb)
+[Ver solución](soluciones/nivel-1/saluda.md)

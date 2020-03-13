@@ -24,4 +24,4 @@ No, el número 11 no es múltiplo de 5
 
 **Pista:** La forma más fácil de de verificar si un número es múltiplo de otro es calcular el módulo y verificar que sea 0. El módulo es el residuo. Por ejemplo, 11 módulo 5 es 1. 23 módulo 5 es 3.
 
-[Ver solución](soluciones/nivel-1/es-multiplo.rb)
+[Ver solución](soluciones/nivel-1/es-multiplo.md)

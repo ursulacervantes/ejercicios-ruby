@@ -10,4 +10,4 @@ Escribe una frase: Esto es fácil
 Esto es fácil
 ```
 
-[Ver solución](soluciones/nivel-1/repite-frase.rb)
+[Ver solución](soluciones/nivel-1/repite-frase.md)

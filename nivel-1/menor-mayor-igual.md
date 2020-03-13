@@ -21,4 +21,4 @@ Ingresa un número: 11
 El número es mayor que 10
 ```
 
-[Ver solución](soluciones/nivel-1/menor-mayor-igual.rb)
+[Ver solución](soluciones/nivel-1/menor-mayor-igual.md)
