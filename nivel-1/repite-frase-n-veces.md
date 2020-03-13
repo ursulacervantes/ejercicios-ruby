@@ -14,4 +14,4 @@ Hola Mundo
 Hola Mundo
 ```
 
-[Ver solución](soluciones/nivel-1/repite-frase-n-veces.md)
+[Ver solución](../soluciones/nivel-1/repite-frase-n-veces.rb)

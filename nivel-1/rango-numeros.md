@@ -17,4 +17,4 @@ Ingresa el límite superior: 10
 
 **Nota:** Fíjate que se imprimen también los números en los límites, en el ejemplo el 5 y el 10.
 
-[Ver solución](soluciones/nivel-1/rango-numeros.md)
+[Ver solución](../soluciones/nivel-1/rango-numeros.rb)

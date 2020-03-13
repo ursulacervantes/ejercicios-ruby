@@ -12,4 +12,4 @@ Ese no es! Intenta nuevamente: 7
 Felicitaciones, lo encontraste!
 ```
 
-[Ver solución](soluciones/nivel-1/adivina-numero.md)
+[Ver solución](../soluciones/nivel-1/adivina-numero.rb)

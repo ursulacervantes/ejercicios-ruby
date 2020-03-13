@@ -10,4 +10,4 @@ Ingresa el segundo número 3
 El resultado es 8
 ```
 
-[Ver solución](soluciones/nivel-1/suma.md)
+[Ver solución](../soluciones/nivel-1/suma.rb)

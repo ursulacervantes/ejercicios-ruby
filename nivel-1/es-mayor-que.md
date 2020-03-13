@@ -14,4 +14,4 @@ Ingresa un número: 5
 El número es menor o igual a 10
 ```
 
-[Ver solución](soluciones/nivel-1/es-mayor-que.md)
+[Ver solución](../soluciones/nivel-1/es-mayor-que.rb)
