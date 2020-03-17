@@ -30,3 +30,10 @@ Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los 
 * [Arreglo a cadena](nivel-2/arreglo-a-cadena.md)
 * [Hashes](nivel-2/hashes.md)
 * [Frecuencias](nivel-2/frecuencias.md)
+
+## Nivel 3
+
+Clases e Instancias
+
+* [Alumnos aprobados](nivel-3/alumnos-aprobados.md)
+* [Promedio de notas](nivel-3/promedio-notas.md)
