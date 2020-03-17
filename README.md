@@ -6,6 +6,8 @@ Cada ejercicio incluye la solución. Te recomiendo que intentes resolver los eje
 
 ## Nivel 1
 
+Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los conceptos básicos.
+
 * [Hola Mundo](nivel-1/hola-mundo.md)
 * [Saluda](nivel-1/saluda.md)
 * [Repite la frase](nivel-1/repite-frase.md)
@@ -18,3 +20,13 @@ Cada ejercicio incluye la solución. Te recomiendo que intentes resolver los eje
 * [Repite frase n veces](nivel-1/repite-frase-n-veces.md)
 * [Adivina el número](nivel-1/edivina-numero.md)
 * [Métodos](nivel-1/metodos.md)
+
+## Nivel 2
+
+* [Reemplazar](nivel-2/reemplazar.md)
+* [Números pares](nivel-2/numeros-pares.md)
+* [Promedio](nivel-2/promedio.md)
+* [Buscar en arreglo](nivel-2/buscar-en-arreglo.md)
+* [Arreglo a cadena](nivel-2/arreglo-a-cadena.md)
+* [Hashes](nivel-2/hashes.md)
+* [Frecuencias](nivel-2/frecuencias.md)
