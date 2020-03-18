@@ -6,14 +6,14 @@ Se requiere una aplicación que permita crear alumnos en un instituto de inglés
 # escribe tu solución acá
 
 alumna1 = Alumno.new('u811489', 'Ursula Cervantes', 85, 85)
-alumno1.estaAprobado
+puts alumno1.getStatus
 # Alumno Ursula Cervantes con códifo u811489 está aprobado.
 
 alumna1 = Alumno.new('u866409', 'Angel Perez', 15, 85)
-alumno1.estaAprobado
+puts alumno1.getStatus
 # Alumno Angel Perez con código u866409 está observado.
 
 alumna1 = Alumno.new('u823097', 'Luis Prado', 25, 65)
-alumno1.estaAprobado
+puts alumno1.getStatus
 #Alumno Luis Prado con código u823097 está reprobado.
 ```
