@@ -21,4 +21,4 @@ alumno = Alumno.new('u811489', 'Ursula','Cervantes', {
     "final" => 20,
    })
 
-print alumno.promedio
+puts alumno.promedio
