@@ -22,4 +22,4 @@ puts  alumno.promedio
 
 ```
 
-[Ver solución](../soluciones/nivel-2/promedio-notas.rb)
+[Ver solución](../soluciones/nivel-3/promedio-notas.rb)

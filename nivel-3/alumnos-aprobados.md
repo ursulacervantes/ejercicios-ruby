@@ -17,3 +17,5 @@ alumna1 = Alumno.new('u823097', 'Luis Prado', 25, 65)
 puts alumno1.getStatus
 #Alumno Luis Prado con código u823097 está reprobado.
 ```
+
+[Ver solución](../soluciones/nivel-3/alumsno-aprobados.rb)

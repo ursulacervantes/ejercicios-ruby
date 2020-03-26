@@ -33,7 +33,10 @@ Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los 
 
 ## Nivel 3
 
-Clases e Instancias
+Clases e Instancias. Programación Orientada a Objetos
 
 * [Alumnos aprobados](nivel-3/alumnos-aprobados.md)
 * [Promedio de notas](nivel-3/promedio-notas.md)
+* [Crear un cuadrado](nivel-3/cuadrado.md)
+* [Cuánto pintura necesito? ](nivel-3/pintura.md)
+* [Calcular la remuneración ](nivel-3/remuneracion.md)
