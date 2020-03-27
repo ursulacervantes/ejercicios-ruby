@@ -31,12 +31,23 @@ Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los 
 * [Hashes](nivel-2/hashes.md)
 * [Frecuencias](nivel-2/frecuencias.md)
 
+# Programación Orientada a Objetos
+
 ## Nivel 3
 
-Clases e Instancias. Programación Orientada a Objetos
+Clases e Instancias.
 
 * [Alumnos aprobados](nivel-3/alumnos-aprobados.md)
 * [Promedio de notas](nivel-3/promedio-notas.md)
 * [Crear un cuadrado](nivel-3/cuadrado.md)
 * [Cuánto pintura necesito? ](nivel-3/pintura.md)
 * [Calcular la remuneración ](nivel-3/remuneracion.md)
+
+## Nivel 4
+
+Relaciones entre clases.
+
+* [Torneo de Karate](nivel-4/torneo-karate.md)
+* [Calcular el sueldo de los trabajadores](nivel-4/sueldo-trabajadores.md)
+* [Programa de lealtad de aerolínea](nivel-4/aerolinea.md)
+* [Calcular el pago mensual de docentes](nivel-4/pago-docentes.md)
