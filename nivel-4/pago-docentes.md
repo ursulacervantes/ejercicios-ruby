@@ -49,11 +49,8 @@ Desarrollar el programa orientado a objetos que permita determinar lo siguiente:
 
 
 * Liste los docentes, muestre todos sus datos y su respectivo sueldo
-
 * Liste los docentes en un determinado grado, muestre todos sus datos y su respectivo sueldo
-
 * Muestre el monto que se paga por grado de docente
-
 * Listado los montos que se paga en los cuatro grados de los docentes
 
 [Ver solución](../soluciones/nivel-4/pago-docentes.rb)
