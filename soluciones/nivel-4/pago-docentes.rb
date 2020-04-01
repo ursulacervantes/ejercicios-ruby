@@ -1,9 +1,28 @@
+# Utilitario
 def imprimirTitulo(titulo)
-  print "------------------------\n"
-  print "#{titulo}\n"
-  print "------------------------\n"
+  puts "------------------------"
+  puts "#{titulo}"
+  puts "------------------------"
 end
 
+def imprimirDatosDocente(dni, nombre, apellido, grado, antiguedad, horasTrabajadas, minutosTardanza)
+  puts "Nombre #{@nombre} #{@apellido}"
+  puts "DNI #{@dni}"
+  puts "Grado de instrucción #{@grado}"
+  puts "Antiguedad #{@antiguedad}"
+  puts "Horas trabajadas #{@horasTrabajadas}"
+  puts "Minutos de tardanza #{@minutosTardanza}"
+end
+
+def imprimirPagoDocente(nombre, apellido, pago)
+  puts "Docente #{nombre} #{apellido}: #{pago}"
+end
+
+def imprimirTarifa(tarifa)
+  puts(tarifa)
+end
+
+# Clases
 class Docente
   attr_accessor :dni, :nombre, :apellido, :grado, :antiguedad, :horasTrabajadas, :minutosTardanza
 
@@ -18,13 +37,7 @@ class Docente
   end
 
   def mostrarDatos
-    print "Nombre #{@nombre} #{@apellido} \n"
-    print "DNI #{@dni} \n"
-    print "Grado de instrucción #{@grado} \n"
-    print "Antiguedad #{@antiguedad} \n"
-    print "Horas trabajadas #{@horasTrabajadas} \n"
-    print "Minutos de tardanza #{@minutosTardanza} \n"
-    print "\n"
+    imprimirDatosDocente(@dni, @nombre, @apellido, @grado, @antiguedad, @horasTrabajadas, @minutosTardanza)
   end
 
 end
@@ -89,30 +102,39 @@ class Universidad
     return pagoMensual
   end
 
+  def mostrarDatosDocentes(docentes)
+    for docente in docentes
+      docente.mostrarDatos
+    end
+  end
+
   def listarDocentes
-    @docentes.each {|docente| docente.mostrarDatos}
+    mostrarDatosDocentes(@docentes)
   end
 
   def listarDocentesPorGrado(grado)
-    docentesPorGrado = @docentes.select{|docente| docente.grado == grado.downcase }
-    docentesPorGrado.each {|docente| docente.mostrarDatos}
+    docentesPorGrado = Array.new
+
+    for docente in @docentes
+      if docente.grado == grado.downcase
+        docentesPorGrado.push(docente)
+      end
+    end
+
+    mostrarDatosDocentes(docentesPorGrado)
   end
 
   def obtenerPagoDocentePorGrado(grado)
     imprimirTitulo("Tarifa por grado")
-
-    @tarifa.each do |key, value|
-      print "Grado #{key}: S/. #{value} \n"
-    end
+    imprimirTarifa(@tarifa)
   end
 
   def listarPagoDocentes
     imprimirTitulo("Pago del mes por docente")
 
-    @docentes.each {
-      |docente|
-      print "Docente #{docente.nombre} #{docente.apellido}: #{calcularPagoMensual(docente)} \n"
-    }
+    for docente in @docentes
+      imprimirPagoDocente(docente.nombre, docente.apellido, calcularPagoMensual(docente))
+    end
   end
 end
 
@@ -121,7 +143,14 @@ universidad = Universidad.new("INNOVATE")
 universidad.agregarDocente("89075371", "Pedro", "Quispe", "Bachiller", 2, 100, 2)
 universidad.agregarDocente("08127636", "Fernando", "Rordiguez", "Maestria", 5, 80, 18)
 
+# Liste los docentes, muestre todos sus datos y su respectivo sueldo
 universidad.listarDocentes
+
+# Liste los docentes en un determinado grado, muestre todos sus datos y su respectivo sueldo
 universidad.listarDocentesPorGrado("Maestria")
+
+# Muestre el monto que se paga por grado de docente
 universidad.obtenerPagoDocentePorGrado("bachiller")
+
+#  Listado los montos que se paga en los cuatro grados de los docentes
 universidad.listarPagoDocentes
