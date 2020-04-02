@@ -31,8 +31,8 @@ class Pantalla
     puts "Docente #{nombre} #{apellido}: #{pago}"
   end
 
-  def imprimirTarifa(tarifa)
-    puts(tarifa)
+  def imprimirTarifa(grado, tarifa)
+    puts("Grado #{grado}: #{tarifa}")
   end
 end
 
@@ -58,7 +58,6 @@ class Universidad
   def initialize(nombre)
     @nombre = nombre
     @docentes = Array.new
-    @tarifa = { "bachiller": 40, "titulado": 80, "maestria": 100, "doctorado": 180 }
   end
 
   def agregarDocente(dni, nombre, apellido, grado, antiguedad, horasTrabajadas, minutosTardanza)
@@ -66,14 +65,10 @@ class Universidad
     @docentes.push(docente)
   end
 
-  def obtenerTarifa(docente)
-    return @tarifa[docente.grado.to_sym]
-  end
-
-  def calcularAumento(docente)
+  def calcularAumento(antiguedad)
     aumento = 0
 
-    case docente.antiguedad
+    case antiguedad
     when 0..3
       aumento = 3/100
     when 4..6
@@ -89,9 +84,9 @@ class Universidad
     return aumento
   end
 
-  def calcularBono(docente)
+  def calcularBono(minutosTardanza)
     bono = 0
-    case docente.minutosTardanza
+    case minutosTardanza
     when 0
       bono = 120
     when 1..5
@@ -108,7 +103,10 @@ class Universidad
   end
 
   def calcularPagoMensual(docente)
-    pagoMensual = obtenerTarifa(docente) + calcularAumento(docente) + calcularBono(docente)
+    pagoMensual =
+      obtenerPagoDocentePorGrado(docente.grado) +
+      calcularAumento(docente.antiguedad) +
+      calcularBono(docente.minutosTardanza)
     return pagoMensual
   end
 
@@ -129,7 +127,22 @@ class Universidad
   end
 
   def obtenerPagoDocentePorGrado(grado)
-    return @tarifa
+    tarifa = 0
+
+    case grado
+    when "bachiller"
+      tarifa = 40
+    when "titulado"
+      tarifa = 80
+    when "maestria"
+      tarifa = 100
+    when "doctorado"
+      tarifa = 180
+    else
+      tarifa = 0
+    end
+
+    return tarifa
   end
 
   def listarPagoDocentes
@@ -156,11 +169,11 @@ pantalla.imprimirDatosDocentes(docentes)
 docentes = universidad.listarDocentesPorGrado("Maestria")
 pantalla.imprimirDatosDocentes(docentes)
 
-
 # Muestre el monto que se paga por grado de docente
-tarifa = universidad.obtenerPagoDocentePorGrado("bachiller")
+grado = "bachiller"
+tarifa = universidad.obtenerPagoDocentePorGrado(grado)
 pantalla.imprimirTitulo("Tarifa por grado")
-pantalla.imprimirTarifa(tarifa)
+pantalla.imprimirTarifa(grado, tarifa)
 
 #  Listado los montos que se paga en los cuatro grados de los docentes
 pagos = universidad.listarPagoDocentes
