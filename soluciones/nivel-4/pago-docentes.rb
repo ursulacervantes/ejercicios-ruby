@@ -1,28 +1,42 @@
-# Utilitario
-def imprimirTitulo(titulo)
-  puts "------------------------"
-  puts "#{titulo}"
-  puts "------------------------"
+class Pantalla
+  def imprimirTitulo(titulo)
+    puts "------------------------"
+    puts "#{titulo}"
+    puts "------------------------"
+  end
+
+  def imprimirDatosDocentes(docentes)
+    for docente in docentes
+      imprimirDatosDocente(docente)
+    end
+  end
+
+  def imprimirDatosDocente(docente)
+    puts "Nombre #{docente.nombre} #{docente.apellido}"
+    puts "DNI #{docente.dni}"
+    puts "Grado de instrucción #{docente.grado}"
+    puts "Antiguedad #{docente.antiguedad}"
+    puts "Horas trabajadas #{docente.horasTrabajadas}"
+    puts "Minutos de tardanza #{docente.minutosTardanza}"
+    puts "--------------------------------------"
+  end
+
+  def imprimirPagoDocentes(pagos)
+    for pago in pagos
+      imprimirPagoDocente(pago[:docente].nombre, pago[:docente].apellido, pago[:pago])
+    end
+  end
+
+  def imprimirPagoDocente(nombre, apellido, pago)
+    puts "Docente #{nombre} #{apellido}: #{pago}"
+  end
+
+  def imprimirTarifa(tarifa)
+    puts(tarifa)
+  end
 end
 
-def imprimirDatosDocente(dni, nombre, apellido, grado, antiguedad, horasTrabajadas, minutosTardanza)
-  puts "Nombre #{@nombre} #{@apellido}"
-  puts "DNI #{@dni}"
-  puts "Grado de instrucción #{@grado}"
-  puts "Antiguedad #{@antiguedad}"
-  puts "Horas trabajadas #{@horasTrabajadas}"
-  puts "Minutos de tardanza #{@minutosTardanza}"
-end
 
-def imprimirPagoDocente(nombre, apellido, pago)
-  puts "Docente #{nombre} #{apellido}: #{pago}"
-end
-
-def imprimirTarifa(tarifa)
-  puts(tarifa)
-end
-
-# Clases
 class Docente
   attr_accessor :dni, :nombre, :apellido, :grado, :antiguedad, :horasTrabajadas, :minutosTardanza
 
@@ -34,10 +48,6 @@ class Docente
     @antiguedad = antiguedad
     @horasTrabajadas = horasTrabajadas
     @minutosTardanza = minutosTardanza
-  end
-
-  def mostrarDatos
-    imprimirDatosDocente(@dni, @nombre, @apellido, @grado, @antiguedad, @horasTrabajadas, @minutosTardanza)
   end
 
 end
@@ -102,14 +112,8 @@ class Universidad
     return pagoMensual
   end
 
-  def mostrarDatosDocentes(docentes)
-    for docente in docentes
-      docente.mostrarDatos
-    end
-  end
-
   def listarDocentes
-    mostrarDatosDocentes(@docentes)
+    return @docentes
   end
 
   def listarDocentesPorGrado(grado)
@@ -121,36 +125,44 @@ class Universidad
       end
     end
 
-    mostrarDatosDocentes(docentesPorGrado)
+    return docentesPorGrado
   end
 
   def obtenerPagoDocentePorGrado(grado)
-    imprimirTitulo("Tarifa por grado")
-    imprimirTarifa(@tarifa)
+    return @tarifa
   end
 
   def listarPagoDocentes
-    imprimirTitulo("Pago del mes por docente")
-
+    pagos = Array.new
     for docente in @docentes
-      imprimirPagoDocente(docente.nombre, docente.apellido, calcularPagoMensual(docente))
+      pagos.push({"docente": docente, "pago": calcularPagoMensual(docente)})
     end
+    return pagos
   end
 end
 
+
+pantalla = Pantalla.new
 universidad = Universidad.new("INNOVATE")
 
 universidad.agregarDocente("89075371", "Pedro", "Quispe", "Bachiller", 2, 100, 2)
 universidad.agregarDocente("08127636", "Fernando", "Rordiguez", "Maestria", 5, 80, 18)
 
 # Liste los docentes, muestre todos sus datos y su respectivo sueldo
-universidad.listarDocentes
+docentes = universidad.listarDocentes
+pantalla.imprimirDatosDocentes(docentes)
 
 # Liste los docentes en un determinado grado, muestre todos sus datos y su respectivo sueldo
-universidad.listarDocentesPorGrado("Maestria")
+docentes = universidad.listarDocentesPorGrado("Maestria")
+pantalla.imprimirDatosDocentes(docentes)
+
 
 # Muestre el monto que se paga por grado de docente
-universidad.obtenerPagoDocentePorGrado("bachiller")
+tarifa = universidad.obtenerPagoDocentePorGrado("bachiller")
+pantalla.imprimirTitulo("Tarifa por grado")
+pantalla.imprimirTarifa(tarifa)
 
 #  Listado los montos que se paga en los cuatro grados de los docentes
-universidad.listarPagoDocentes
+pagos = universidad.listarPagoDocentes
+pantalla.imprimirTitulo("Pago del mes por docente")
+pantalla.imprimirPagoDocentes(pagos)
