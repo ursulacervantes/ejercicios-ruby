@@ -51,3 +51,14 @@ Relaciones entre clases.
 * [Calcular el sueldo de los trabajadores](nivel-4/sueldo-trabajadores.md)
 * [Programa de lealtad de aerolínea](nivel-4/aerolinea.md)
 * [Calcular el pago mensual de docentes](nivel-4/pago-docentes.md)
+
+
+## Nivel 5
+
+Herencia y polimorfismo
+
+* [Tipos de profesores](nivel-5/tipos-profesores.md)
+* [Embajada Israel](nivel-5/embajada-israel.md)
+* [Revisiones técnicas vehiculares](nivel-5/revisiones-tecnicas.md)
+* [Coca-Cola](nivel-5/coca-cola.md)
+* [Asociación Canes del Perú](nivel-5/asociacion-canes.md)
