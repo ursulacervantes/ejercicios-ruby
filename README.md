@@ -4,6 +4,8 @@ El objetivo de estos ejercicios es aprender y practicar el lenguaje de programac
 
 Cada ejercicio incluye la solución. Te recomiendo que intentes resolver los ejercicios antes de ver la solución. Si no lo puedes resolver, analiza la solución, ciérrala, e intenta nuevamente. Es la mejor forma de aprender 💡.
 
+# Fundamentos de programación
+
 ## Nivel 1
 
 Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los conceptos básicos.
@@ -31,9 +33,18 @@ Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los 
 * [Hashes](nivel-2/hashes.md)
 * [Frecuencias](nivel-2/frecuencias.md)
 
+## Nivel 3
+
+Estructuras secuenciales.
+
+* [Inversión en un banco](fundamentos/nivel-3/inversion-banco.md)
+* [Calcular descuento](fundamentos/nivel-3/calcular-descuento.md)
+* [Obtener nota del curso](fundamentos/nivel-3/nota-curso.md)
+
+
 # Programación Orientada a Objetos
 
-## Nivel 3
+## Nivel 1
 
 Clases e Instancias.
 
@@ -43,7 +54,7 @@ Clases e Instancias.
 * [Cuánto pintura necesito? ](nivel-3/pintura.md)
 * [Calcular la remuneración ](nivel-3/remuneracion.md)
 
-## Nivel 4
+## Nivel 2
 
 Relaciones entre clases.
 
@@ -53,7 +64,7 @@ Relaciones entre clases.
 * [Calcular el pago mensual de docentes](nivel-4/pago-docentes.md)
 
 
-## Nivel 5
+## Nivel 3
 
 Herencia y polimorfismo
 
