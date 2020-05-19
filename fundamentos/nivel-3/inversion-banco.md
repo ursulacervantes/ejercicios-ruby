@@ -4,7 +4,7 @@ Suponga que un individuo desea invertir su capital en un banco y desea saber cu�
 
 ```
 $ ruby inversion-banco.rb
-Ingresar capital invertido: 200
+Calcular cuánto dinero ganara después de un mes
 
 Después de un mes ustedes recibirá: 4
 ```

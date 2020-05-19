@@ -1,19 +1,15 @@
-print "Ingresar nota CP1: "
-cp1 = gets.chomp.to_i
-print "Ingresar nota CP2: "
-cp2 = gets.chomp.to_i
-print "Ingresar nota CP3: "
-cp3 = gets.chomp.to_i
-print "Ingresar nota Examen Final: "
-ef = gets.chomp.to_i
-print "Ingresar nota Trabajo Final: "
-tf = gets.chomp.to_i
+puts "Calcular nota final del curso"
 
-promedioParciales = (cp1 + cp2 + cp3)/3
-notaParciales = promedioParciales * 0.55
-notaExamenFinal = ef * 0.30
-notaTrabajoFinal = tf * 0.15
+def calcularNota(cp1,cp2,cp3,ef,tf)
 
-notaFinal = notaParciales + notaExamenFinal + notaTrabajoFinal
+  promedioParciales = (cp1 + cp2 + cp3)/3
+  notaParciales = promedioParciales * 0.55
+  notaExamenFinal = ef * 0.30
+  notaTrabajoFinal = tf * 0.15
 
-print "Tu nota final es: #{notaFinal}"
+  notaFinal = notaParciales + notaExamenFinal + notaTrabajoFinal
+
+  return notaFinal
+end
+
+puts "Tu nota final es: #{calcularNota(16,18,14,15,19)}"

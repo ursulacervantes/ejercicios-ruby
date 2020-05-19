@@ -1,7 +1,8 @@
+puts "Calcular cuánto dinero ganara después de un mes"
 
-print "Ingresar capital invertido: "
-inversion = gets.chomp.to_i
+def calcularInteres(inversion)
+  interes = inversion * 0.02
+  return interes
+end
 
-interes = inversion * 0.02
-
-print "Después de un mes ustedes recibirá: #{interes}"
+puts "Después de un mes ustedes recibirá: #{calcularInteres(200)}"

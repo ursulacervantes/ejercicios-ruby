@@ -1,7 +1,9 @@
 
-print "Ingresar el total de la compra: "
-total = gets.chomp.to_i
+puts "Calcular el descuento que ofrece la tienda"
 
-descuento = total * 0.85
+def calcularDescuento(total)
+  descuento = total * 0.85
+  return descuento
+end
 
-print "El precio a pagar es: #{descuento}"
+puts "El precio a pagar es: #{calcularDescuento(150)}"

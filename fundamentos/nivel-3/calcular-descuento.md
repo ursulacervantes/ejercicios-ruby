@@ -4,7 +4,7 @@ Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente 
 
 ```
 $ ruby calcular-descuento.rb
-Ingresar el total de la compra: 150
+Calcular el descuento que ofrece la tienda
 
 El precio a pagar es: 127.5
 
