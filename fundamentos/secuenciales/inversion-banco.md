@@ -9,4 +9,4 @@ Calcular cuánto dinero ganara después de un mes
 Después de un mes ustedes recibirá: 4
 ```
 
-[Ver solución](../soluciones/fundamentos/nivel-3/inversion-banco.rb)
+[Ver solución](../soluciones/fundamentos/secuenciales/inversion-banco.rb)

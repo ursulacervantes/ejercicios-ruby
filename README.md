@@ -35,11 +35,31 @@ Ejercicios básico para poder familiarizarnos con Ruby y poner en práctica los 
 
 ## Nivel 3
 
-Estructuras secuenciales.
+### Estructuras secuenciales
 
-* [Inversión en un banco](fundamentos/nivel-3/inversion-banco.md)
-* [Calcular descuento](fundamentos/nivel-3/calcular-descuento.md)
-* [Obtener nota del curso](fundamentos/nivel-3/nota-curso.md)
+* [Inversión en un banco](fundamentos/secuenciales/inversion-banco.md)
+* [Calcular descuento](fundamentos/secuenciales/calcular-descuento.md)
+* [Obtener nota del curso](fundamentos/secuenciales/nota-curso.md)
+* [Determinar si el número es positivo](fundamentos/secuenciales/numero-positivo.md)
+* [Sumar dos números](fundamentos/secuenciales/sumar-numeros.md)
+* [Obtener el área de un círculo](fundamentos/secuenciales/area-circulo.md)
+
+
+### Estructuras selectivas/condicionales
+
+* [Comprar un helado](fundamentos/condicionales/comprar-helado.md)
+* [El alumno aprueba el curso?](fundamentos/condicionales/alumno-aprobado.md)
+* [Descuento de motocicletas](fundamentos/condicionales/descuento-motocicletas.md)
+* [Comprar llantas](fundamentos/condicionales/comprar-llantas.md)
+* [Calcular salario de un obrero](fundamentos/condicionales/salario-obrero.md)
+
+
+### Estructuras repetitivas
+
+* [Mostrar números pares](fundamentos/repetitivas/numeros-pares.md)
+* [Mostrar el promedio de alturas](fundamentos/repetitivas/promedio-alturas.md)
+* [Registro de horas y salario](fundamentos/repetitivas/horas-salario.md)
+* [Calcular promedio del curso](fundamentos/repetitivas/promedio-curso.md)
 
 
 # Programación Orientada a Objetos

@@ -10,4 +10,4 @@ El precio a pagar es: 127.5
 
 ```
 
-[Ver solución](../soluciones/fundamentos/nivel-3/calcular-descuento.rb)
+[Ver solución](./../../soluciones/fundamentos/secuenciales/calcular-descuento.rb)
