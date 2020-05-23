@@ -23,8 +23,8 @@ puts "El total a pagar es #{total}"
 
 ```ruby
 $ ruby comprar-llantas.rb
-El total a pagar es 2310
-El total a pagar es 1600
+El total a pagar es 770.0
+El total a pagar es 400.0
 ```
 
 [Ver solución](./../../soluciones/fundamentos/condicionales/comprar-llantas.rb)

@@ -12,6 +12,7 @@ def precioHelado(topping)
         precioTopping = 0.95
     else
         precioTopping = 0
+        puts "No tenemos este topping, lo sentimos."
     end
 
     precioTotal = precioBase + precioTopping
