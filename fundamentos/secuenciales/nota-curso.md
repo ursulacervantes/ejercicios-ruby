@@ -13,4 +13,4 @@ Calcular nota final del curso
 Tu nota final es: 16.15
 ```
 
-[Ver solución](../soluciones/fundamentos/secuenciales/nota-curso.rb)
+[Ver solución](./../../soluciones/fundamentos/secuenciales/nota-curso.rb)
